@@ -7,11 +7,14 @@ body{
 a{
     color: aliceblue;
 }
-a:hover, a:active{
+a:hover{
     color: red;
     background-color: aliceblue;
 }
 a:visited{
     color: aqua;
+}
+a:active{
+    color: green;
 }
 
