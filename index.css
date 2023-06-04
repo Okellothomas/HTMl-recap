@@ -4,3 +4,10 @@ body{
     align-items: center;
     /* text-align: center; */
 }
+a{
+    color: aliceblue;
+}
+a:hover{
+    color: red;
+    background-color: aliceblue;
+}
