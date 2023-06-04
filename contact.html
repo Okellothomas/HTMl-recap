@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Okello Thomas" />
+    <meta name="description" content="This the contact page nigga!" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us Now</title>
+    <link rel="stylesheet" href="contact.html" type="text/css" />
+    <link rel="icon" href="html.png" type="text/x-icon" />
+  </head>
+  <body>
+    <header>
+      <h1>Contact Us!</h1>
+      <nav>
+        <ol>
+          <li><a href="#about">About</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="#store">Store</a></li>
+        </ol>
+      </nav>
+      <figure>
+        <img
+          src="images/obama.jpeg"
+          alt="The obama"
+          loading="eager"
+          title="Obama is the man to watch"
+          width="900px"
+          height="200px"
+        />
+        <figcaption>Obama is the man to watch</figcaption>
+      </figure>
+    </header>
+    <hr />
+    <article>
+      <h1>Our Contact Form</h1>
+      <form action="https://httpbin.org/get" method="get">
+        <fieldset>
+          <legend>Send us a message</legend>
+          <div>
+            <label for="name">Your Name</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Your Name"
+              value="name"
+              required
+              autocomplete="on"
+            />
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Your email"
+              value="email"
+              required
+              autocomplete="on"
+              autofocus
+            />
+          </div>
+          <div>
+            <label for="name">Your Message</label>
+            <br />
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Your message"
+              required
+              autocomplete="on"
+            ></textarea>
+          </div>
+        </fieldset>
+        <button type="submit">submit</button>
+        <button type="reset">reset</button>
+      </form>
+    </article>
+
+    <article>
+      <h2>Our Location</h2>
+      <address>
+        <p>jkuatac.ke</p>
+        <p>wwkuealca</p>
+      </address>
+
+      <div>
+        <label for="Phone">Phone</label>
+        <p type="tel">555-555-555</p>
+      </div>
+
+      <p><a href="#">back to top</a></p>
+    </article>
+
+    <footer>
+      <p>Copy &copy; Okello Thomas Olal</p>
+    </footer>
+  </body>
+</html>
