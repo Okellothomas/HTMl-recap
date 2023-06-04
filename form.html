@@ -11,5 +11,149 @@
     <link rel="stylesheet" href="form.css" type="text/css" />
     <link rel="icon" href="html.png" type="text/x-icon" />
   </head>
-  <body></body>
+  <body>
+    <!-- the main semantic tag -->
+    <header>
+      <h1>This is the form html page!</h1>
+      <nav>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ol>
+      </nav>
+    </header>
+
+    <!-- the main semantic tag -->
+    <main>
+      <article>
+        <h2>This is the form page</h2>
+        <section>
+          <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+              <legend>Personal Information</legend>
+              <label for="firstName">First Name</label>
+              <input
+                type="text"
+                name="firstName"
+                id="firstName"
+                autocomplete="on"
+                autofocus
+                placeholder="Jane"
+                required
+              />
+              <label for="lastName">Last Name</label>
+              <input
+                type="text"
+                id="lastName"
+                name="lastName"
+                autocomplete="on"
+                placeholder="Doe"
+                required
+              />
+              <input
+                type="tel"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{3}"
+                value="3820293"
+                required
+              />
+              <select name="foods" id="foods">
+                <optgroup>
+                  <option value="omena">Omena</option>
+                  <option value="mbuta">Mbuta</option>
+                  <option value="Salmon" selected>Salmon</option>
+                </optgroup>
+                <optgroup>
+                  <option value="kuon">Kuon</option>
+                  <option value="Kuon">Kendo</option>
+                </optgroup>
+              </select>
+
+              <fieldset>
+                <legend>Favorite foods</legend>
+                <label for="omena">omena</label>
+                <input
+                  type="radio"
+                  value="omena"
+                  id="omena"
+                  name="fish"
+                  checked
+                />
+                <label for="genge">Genge</label>
+                <input type="radio" value="Genge" id="omena" name="fish" />
+                <label for="board">board</label>
+                <input type="radio" value="Board" id="omena" name="fish" />
+              </fieldset>
+              <fieldset>
+                <legend>Do you have a pet?</legend>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="fruit"
+                    id="mango"
+                    value="mango"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="fruit"
+                    id="Sukumawiki"
+                    value="Sukumawiki"
+                  />
+                  <label for="Sukumawiki">Sukumawiki</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="fruit"
+                    id="Kales"
+                    value="Kales"
+                    checked
+                  />
+                  <label for="Kales">Kales</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="fruit"
+                    id="Mapera"
+                    value="Mapera"
+                  />
+                  <label for="Mapera">Mapera</label>
+                </div>
+                <div>
+                  <input
+                    type="checkbox"
+                    name="fruit"
+                    id="orange"
+                    value="orange"
+                  />
+                  <label for="orange">Orange</label>
+                </div>
+              </fieldset>
+            </fieldset>
+            <fieldset>
+              <legend>do you have any comment</legend>
+              <label for="comment">Leave your comment here</label>
+              <textarea
+                name="comment"
+                id="comment"
+                cols="30"
+                rows="10"
+              ></textarea>
+            </fieldset>
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+            <button
+              type="submit"
+              formaction="https://httpbin.org/post"
+              formmethod="post"
+            >
+              Post
+            </button>
+          </form>
+        </section>
+      </article>
+    </main>
+  </body>
 </html>
